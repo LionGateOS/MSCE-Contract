@@ -1,0 +1,41 @@
+{
+  "contract_version": "msce-memory-contract-v1",
+  "event_id": "msce-event-003",
+  "timestamp": "2026-07-08T22:00:00Z",
+  "source_system": "workrunner",
+  "generated_by": "msce",
+  "project": "workrunner",
+  "task_id": "task-003",
+  "task_type": "execution",
+  "lifecycle_state": "blocked",
+  "summary": "Task execution blocked pending required approval.",
+  "confidence": 0.9,
+  "decisions_detected": [
+    "Execution must wait for approval."
+  ],
+  "outcomes_detected": [
+    "Task remains incomplete."
+  ],
+  "blockers_detected": [
+    "Required approval has not been received."
+  ],
+  "validation_results": [
+    "Blocked lifecycle state correctly identified."
+  ],
+  "evidence": [
+    "WorkRunner approval state event"
+  ],
+  "related_events": [
+    "workrunner-event-003"
+  ],
+  "continuity_signals": [
+    "blocked_task"
+  ],
+  "provenance": {
+    "originating_system": "workrunner",
+    "source_event_references": [
+      "workrunner-event-003"
+    ],
+    "interpretation_version": "msce-v1"
+  }
+}

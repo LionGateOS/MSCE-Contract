@@ -29,6 +29,18 @@ def main() -> int:
             True,
         ),
         (
+            ROOT / "examples" / "failed-task.json",
+            True,
+        ),
+        (
+            ROOT / "examples" / "blocker.json",
+            True,
+        ),
+        (
+            ROOT / "examples" / "decision.json",
+            True,
+        ),
+        (
             ROOT / "tests" / "invalid_payloads" / "invalid-confidence.json",
             False,
         ),

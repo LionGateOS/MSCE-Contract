@@ -1,0 +1,41 @@
+{
+  "contract_version": "msce-memory-contract-v1",
+  "event_id": "msce-event-002",
+  "timestamp": "2026-07-08T21:30:00Z",
+  "source_system": "workrunner",
+  "generated_by": "msce",
+  "project": "workrunner",
+  "task_id": "task-002",
+  "task_type": "execution",
+  "lifecycle_state": "failed",
+  "summary": "Task execution failed during validation workflow.",
+  "confidence": 0.92,
+  "decisions_detected": [
+    "Execution stopped after failure condition."
+  ],
+  "outcomes_detected": [
+    "Task did not complete successfully."
+  ],
+  "blockers_detected": [
+    "Execution failure prevented completion."
+  ],
+  "validation_results": [
+    "Failure state correctly classified."
+  ],
+  "evidence": [
+    "WorkRunner task execution failure event"
+  ],
+  "related_events": [
+    "workrunner-event-002"
+  ],
+  "continuity_signals": [
+    "failure_history"
+  ],
+  "provenance": {
+    "originating_system": "workrunner",
+    "source_event_references": [
+      "workrunner-event-002"
+    ],
+    "interpretation_version": "msce-v1"
+  }
+}
