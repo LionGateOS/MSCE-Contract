@@ -52,6 +52,14 @@ def main() -> int:
             ROOT / "tests" / "invalid_payloads" / "missing-provenance.json",
             False,
         ),
+        (
+            ROOT / "tests" / "invalid_payloads" / "invalid-contract-version.json",
+            False,
+        ),
+        (
+            ROOT / "tests" / "invalid_payloads" / "invalid-timestamp.json",
+            False,
+        ),
     ]
 
     failures = 0

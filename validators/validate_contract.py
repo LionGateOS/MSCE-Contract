@@ -6,10 +6,11 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 
 try:
-    from jsonschema import validate
+    from jsonschema import Draft202012Validator, FormatChecker
     from jsonschema.exceptions import ValidationError
 except ImportError:
     print("Missing dependency: jsonschema")
@@ -25,10 +26,16 @@ def validate_payload(payload_path: Path) -> bool:
     payload = json.loads(payload_path.read_text(encoding="utf-8"))
 
     try:
-        validate(instance=payload, schema=schema)
-    except ValidationError as exc:
+        validator = Draft202012Validator(schema, format_checker=FormatChecker())
+        validator.validate(payload)
+
+        datetime.fromisoformat(
+            payload["timestamp"].replace("Z", "+00:00")
+        )
+
+    except (ValidationError, ValueError, KeyError) as exc:
         print("INVALID")
-        print(exc.message)
+        print(str(exc))
         return False
 
     print("VALID")
