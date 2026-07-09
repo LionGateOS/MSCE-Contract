@@ -1,0 +1,18 @@
+{
+  "contract_version": "msce-memory-contract-v1",
+  "event_id": "msce-event-invalid-005",
+  "timestamp": "not-a-date",
+  "source_system": "workrunner",
+  "generated_by": "msce",
+  "project": "workrunner",
+  "task_id": "task-invalid-timestamp",
+  "task_type": "validation",
+  "lifecycle_state": "completed",
+  "summary": "Invalid timestamp test.",
+  "confidence": 0.9,
+  "provenance": {
+    "originating_system": "workrunner",
+    "source_event_references": [],
+    "interpretation_version": "msce-v1"
+  }
+}
