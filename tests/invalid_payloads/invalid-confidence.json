@@ -1,0 +1,18 @@
+{
+  "contract_version": "msce-memory-contract-v1",
+  "event_id": "msce-event-invalid-001",
+  "timestamp": "2026-07-08T21:00:00Z",
+  "source_system": "workrunner",
+  "generated_by": "msce",
+  "project": "liongateos-memory",
+  "task_id": "task-invalid",
+  "task_type": "validation",
+  "lifecycle_state": "completed",
+  "summary": "Invalid confidence test payload.",
+  "confidence": 1.5,
+  "provenance": {
+    "originating_system": "workrunner",
+    "source_event_references": [],
+    "interpretation_version": "msce-v1"
+  }
+}

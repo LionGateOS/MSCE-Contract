@@ -1,0 +1,13 @@
+{
+  "contract_version": "msce-memory-contract-v1",
+  "event_id": "msce-event-invalid-003",
+  "timestamp": "2026-07-08T21:00:00Z",
+  "source_system": "workrunner",
+  "generated_by": "msce",
+  "project": "liongateos-memory",
+  "task_id": "task-invalid-provenance",
+  "task_type": "validation",
+  "lifecycle_state": "completed",
+  "summary": "Missing provenance test payload.",
+  "confidence": 0.9
+}
